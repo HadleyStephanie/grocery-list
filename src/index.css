@@ -37,11 +37,12 @@ body {
 .logo {
   text-align: center;
   color: rgba(0, 0, 0, 0.811);
-  /* background: linear-gradient(#e66465, #9198e5); */
-  font-size: larger;
-  font-family: "Courier New", Courier, monospace;
+  font-size: xx-large;
+  font-family: "Caveat", cursive;
+  /* font-family: "Courier New", Courier, monospace; */
   /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000; */
+  /* background: linear-gradient(#e66465, #9198e5); */
 }
 
 .form {
@@ -49,8 +50,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: large;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: "Caveat", cursive;
+  font-size: x-large;
   text-shadow: -1px -1px 0 #e4dcdc, 1px -1px 0 #d5d0d0, -1px 1px 0 #f6efef,
     1px 1px 0 #e8e2e2;
 }
@@ -66,20 +68,70 @@ body {
 
 .btn {
   background-color: #6ad6da;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: #b5d9da;
+  transition: 0.5s;
+}
+
+.grocery-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.btn2 {
+  background-color: #f69d3c;
+  margin: 10px 4px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 8px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  outline: solid;
+}
+
+.btn2:hover {
+  background-color: #efbb83;
+  transition: 0.5s;
+}
+
+.grocery-list ul {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  justify-content: center;
+  align-content: start;
 }
 
 .items {
-  font-size: medium;
-  font-family: "Courier New", Courier, monospace;
+  font-size: x-large;
+  font-family: "Caveat", cursive;
   list-style-type: none;
   padding: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
 }
 
 .footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.811);
   background: linear-gradient(#e66465, #9198e5);
-  font-size: larger;
-  font-family: "Courier New", Courier, monospace;
+  font-size: xx-large;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
   padding: 20px;
+  margin: 0px;
 }
